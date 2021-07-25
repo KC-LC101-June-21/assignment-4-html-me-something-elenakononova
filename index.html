@@ -21,9 +21,18 @@
             margin-left: 4em;
             margin-right: 0;
         }
+        button{
+            margin-left: 4em;
+        }
         body{
             margin: 0px;
             padding: 0 px;
+        }
+        #mainHeading{
+            color:red;
+        }
+        #funParagraph{
+            color: green;
         }
         u{
             color: #fff; font-size: 12px; line-height: 15px;
@@ -76,8 +85,9 @@
             </div>
             <main>
             <article>
-                <header>
-                    <h2>Dillon Lake</h2>
+                <header >
+                    <h2 id="mainHeading">Dillon Lake</h2>
+                </header>
                     <p>                   
                         Lake with stunning alpine scenery situated amongst world-renowned ski resorts,
                          this ruggedly beautiful region delivers endless opportunities for fun.
@@ -87,11 +97,10 @@
                            You’ll be dazzled by statuesque mountains topping out above 14,000 feet,
                             the pristine Dillon Reservoir (also known as Lake Dillon), bold rivers with renowned rapids and fishing holes,
                              along with hundreds of miles of wilderness.</p>
-                    </header>
+                  
             </article>
         </main>
-        <h3> Red header that I will remove later</h3>
-        
+               
         <button onclick="youClicked();">Press if like it</button>
     
         <script>
@@ -108,7 +117,13 @@
             }
         </script>
         <p id="demo"></p>
-        
+
+        <p id="funParagraph">This is not fun paragraph if books tell you to make it green. I am felling forced lol</p>
+        <p>Here, I am calculating how name times I user tag 'p'</p>
+        <script>
+            var x = document.getElementsByTagName("P");
+            document.write(x.length);
+        </script>
 
             <footer>&copy; Author: Elena K.</footer>
         </body>
