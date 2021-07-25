@@ -4,18 +4,41 @@
         <title>My_Homework_Page</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-        </head>
-
+        <style>
+        h2{
+            display: block;
+            font-size: 4em;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-left: 2em;
+            margin-right: 0;
+            font-weight: bold;
+        }
+        h3{
+            color:red;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-left: 4em;
+            margin-right: 0;
+        }
+        body{
+            margin: 0px;
+            padding: 0 px;
+        }
+        u{
+            color: #fff; font-size: 12px; line-height: 15px;
+        }
+    </style>
+    </head>
         <body>
             <div class="container">
                 <div class="navbar">
-                    <img src="pics/logo.png" class="logo">
+                    <img src="images/logo.png" class="logo">
                     <nav>
                         <ul style ="list-style-type: square">
-                            <li><a href="">HOME</a></li>
                             <li><a href="https://www.colorado.com/cities-and-towns/dillon" target="_blank">REGION</a></li>
                             <li><a href="">ABOUT</a></li>
-                            <img src="pics/menu.png" class="menu-icon">
+                            <img src="images/menu.png" class="menu-icon">
                         </ul>
                         
                     </nav>
@@ -23,36 +46,70 @@
                     <div class="row">
                         <div class="col">
                             <h1>Colorado</h1>
-                            <p>This is our second visit of Dillon Lake area. We love that place so much that we are coming back for the 3rd time!
+                            <u>This is our second visit of Dillon Lake area. We love that place so much that we are coming back for the 3rd time!
                                It is just a lake surrounded by mountains, areas for hiking, mount biking, and fishing! Visit if you can!
-                            </p>
-                            <button type="button">Explore</button>
-                        </div>
+                            </u>
+                           </div>
                         <div>
                             <div class="col">
                                 <div class="card card1">
                                     <h5>Photo2</h5>
-                                    <p>Desc of photo1</p>
+                                    <u>Desc of photo1</u>
                                 </div>
                                 <div class="card card2">
                                     <h5>Photo2</h5>
-                                    <p>Desc of photo2</p>
+                                    <u>Desc of photo2</u>
                                 </div>
                                 <div class="card card3">
                                     <h5>Photo3</h5>
-                                    <p>Desc of photo3</p>
+                                    <u>Desc of photo3</u>
                                 </div>
                                 <div class="card card4">
                                     <h5>Photo4</h5>
-                                    <p>Desc of photo4</p>
+                                    <u>Desc of photo4</u>
                                 </div>
 
                             </div>
+                            
                         </div>
                     </div>
             </div>
+            <main>
+            <article>
+                <header>
+                    <h2>Dillon Lake</h2>
+                    <p>                   
+                        Lake with stunning alpine scenery situated amongst world-renowned ski resorts,
+                         this ruggedly beautiful region delivers endless opportunities for fun.
+                        Whether you’re seeking a family-friendly weekend or an adventure-filled excursion,
+                         the central region of Summit County (encompassing Dillon, Frisco and Silverthorne)
+                          serves as the perfect basecamp for your high-country vacation.
+                           You’ll be dazzled by statuesque mountains topping out above 14,000 feet,
+                            the pristine Dillon Reservoir (also known as Lake Dillon), bold rivers with renowned rapids and fishing holes,
+                             along with hundreds of miles of wilderness.</p>
+                    </header>
+            </article>
+        </main>
+        <h3> Red header that I will remove later</h3>
+        
+        <button onclick="youClicked();">Press if like it</button>
+    
+        <script>
+            function youClicked () {
+                var txt;
+                var r = confirm("Yes, I like it");
+                if (r == true) {
+                    txt = "you liked my page"
+                }
+                else {
+                    txt = "you did not like it :(";
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+        <p id="demo"></p>
+        
 
-
-
+            <footer>&copy; Author: Elena K.</footer>
         </body>
 </html>
